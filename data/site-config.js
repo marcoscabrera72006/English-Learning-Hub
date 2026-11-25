@@ -12,9 +12,9 @@ ELH.data.config = {
 
   author: {
     // Escribe aquí tu nombre. Ejemplo: name: 'Ana García',
-    name: '',
+    name: 'MarcosCabrera06',
     // Solo tu usuario de GitHub, sin la dirección completa. Ejemplo: githubUser: 'anagarcia',
-    githubUser: '',
+    githubUser: 'marcoscabrera72006',
     // Opcional: una frase corta sobre ti. Ejemplo: bio: 'Estudiante de DAM',
     bio: '',
   },

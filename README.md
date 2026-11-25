@@ -4,6 +4,8 @@
 
 Plataforma web personal para aprender inglés paso a paso: lecciones interactivas de gramática, los 82 verbos irregulares con tarjetas de estudio y repaso espaciado, ejercicios corregidos al momento y seguimiento del progreso. Funciona sin servidores, sin cuentas y sin bases de datos: todo se guarda en el navegador.
 
+**Web publicada:** <https://marcoscabrera72006.github.io/English-Learning-Hub/>
+
 ## Funcionalidades
 
 - **Inicio:** progreso general, tiempos verbales estudiados, verbos aprendidos, ejercicios y porcentaje de aciertos, objetivo diario con racha, frase del día, verbo del día, última actividad y acceso para continuar.
@@ -106,7 +108,7 @@ Capturas de la primera visita (sin progreso guardado). Están en `assets/screens
 
 ## Autor y créditos
 
-- **Autor:** _(escribe aquí tu nombre y tu perfil de GitHub; en la web se configuran en `data/site-config.js`)_
+- **Autor:** MarcosCabrera06 — [github.com/marcoscabrera72006](https://github.com/marcoscabrera72006). En la web, estos datos se cambian en `data/site-config.js`.
 - **Lista de verbos irregulares:** material de clase (Irregular verbs). Los 82 verbos, sus formas y sus traducciones se han copiado sin cambios.
 - **Iconos:** basados en el estilo de Lucide (licencia ISC).
 - **Tipografías:** Bricolage Grotesque y Atkinson Hyperlegible, de Google Fonts (licencia SIL Open Font).

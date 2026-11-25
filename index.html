@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Learning Hub</title>
+  <meta name="description" content="Plataforma personal para aprender inglés: tiempos verbales explicados paso a paso, 82 verbos irregulares, ejercicios con corrección y seguimiento del progreso.">
+  <meta name="theme-color" content="#0a1630">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías (si no hay conexión se usan las fuentes del sistema) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+
+  <!-- Aplica el tema guardado antes de pintar la página (evita el parpadeo) -->
+  <script>
+    (function () {
+      try {
+        var saved = JSON.parse(localStorage.getItem('elh.progress.v1') || '{}');
+        var theme = saved.profile && saved.profile.theme;
+        if (theme === 'light' || theme === 'dark') document.documentElement.setAttribute('data-theme', theme);
+      } catch (error) { /* sin acceso a localStorage: se usa el tema del sistema */ }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación principal"></aside>
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+
+    <div class="app-main">
+      <header class="topbar" id="topbar"></header>
+      <main id="main" class="page" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <div id="modal-root"></div>
+
+  <noscript>
+    <p class="noscript">English Learning Hub necesita JavaScript para funcionar. Actívalo en tu navegador.</p>
+  </noscript>
+
+  <!-- 1. Núcleo: espacio de nombres (siempre el primero) -->
+  <script src="scripts/core/namespace.js"></script>
+
+  <!-- 2. CONTENIDOS (data/) — aquí se añaden las lecciones nuevas -->
+  <script src="data/site-config.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/irregular-verbs.js"></script>
+  <!-- TIEMPOS VERBALES: añade aquí una línea por cada tiempo verbal nuevo -->
+  <script src="data/tenses/present-simple.js"></script>
+  <script src="data/tenses/present-continuous.js"></script>
+  <script src="data/tenses/past-simple.js"></script>
+
+  <!-- 3. Utilidades del núcleo -->
+  <script src="scripts/core/utils.js"></script>
+  <script src="scripts/core/icons.js"></script>
+  <script src="scripts/core/storage.js"></script>
+  <script src="scripts/core/grammar-engine.js"></script>
+  <script src="scripts/core/answer-checker.js"></script>
+  <script src="scripts/core/exercise-bank.js"></script>
+  <script src="scripts/core/speech.js"></script>
+  <script src="scripts/core/theme.js"></script>
+  <script src="scripts/core/router.js"></script>
+
+  <!-- 4. Componentes reutilizables -->
+  <script src="components/toast.js"></script>
+  <script src="components/modal.js"></script>
+  <script src="components/ui.js"></script>
+  <script src="components/grammar-blocks.js"></script>
+  <script src="components/timeline.js"></script>
+  <script src="components/sentence-builder.js"></script>
+  <script src="components/exercise-runner.js"></script>
+  <script src="components/flashcards.js"></script>
+  <script src="components/search.js"></script>
+  <script src="components/sidebar.js"></script>
+  <script src="components/topbar.js"></script>
+
+  <!-- 5. Páginas -->
+  <script src="pages/dashboard.js"></script>
+  <script src="pages/grammar.js"></script>
+  <script src="pages/lesson.js"></script>
+  <script src="pages/verbs.js"></script>
+  <script src="pages/practice.js"></script>
+  <script src="pages/progress.js"></script>
+  <script src="pages/favorites.js"></script>
+  <script src="pages/settings.js"></script>
+  <script src="pages/about.js"></script>
+
+  <!-- 6. Arranque de la aplicación -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>

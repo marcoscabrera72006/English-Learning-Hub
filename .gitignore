@@ -1,0 +1,10 @@
+# Archivos del sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Configuración de editores y herramientas
+.vscode/
+.idea/
+.claude/
+*.swp

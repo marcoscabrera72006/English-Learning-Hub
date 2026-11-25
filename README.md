@@ -68,7 +68,7 @@ English-Learning-Hub/
 ├── pages/                Una página por sección
 ├── scripts/              Núcleo (almacenamiento, rutas, motor gramatical) y arranque
 ├── styles/               Diseño
-├── assets/               Icono y capturas
+├── assets/               Icono, tipografías y capturas
 └── docs/                 Guía para añadir lecciones
 ```
 
@@ -111,4 +111,4 @@ Capturas de la primera visita (sin progreso guardado). Están en `assets/screens
 - **Autor:** MarcosCabrera06 — [github.com/marcoscabrera72006](https://github.com/marcoscabrera72006). En la web, estos datos se cambian en `data/site-config.js`.
 - **Lista de verbos irregulares:** material de clase (Irregular verbs). Los 82 verbos, sus formas y sus traducciones se han copiado sin cambios.
 - **Iconos:** basados en el estilo de Lucide (licencia ISC).
-- **Tipografías:** Bricolage Grotesque y Atkinson Hyperlegible, de Google Fonts (licencia SIL Open Font).
+- **Tipografías:** Bricolage Grotesque y Atkinson Hyperlegible, descargadas de Google Fonts e incluidas en `assets/fonts/` para que la web funcione sin conexión. Licencia SIL Open Font 1.1 (los textos de la licencia están en la misma carpeta).

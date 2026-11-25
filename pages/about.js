@@ -28,7 +28,7 @@
 ├── pages/                Una página por sección
 ├── scripts/              Núcleo y arranque
 ├── styles/               Diseño
-├── assets/               Icono y capturas
+├── assets/               Icono, tipografías y capturas
 └── docs/                 Guía para añadir lecciones`;
 
   function authorCard() {
@@ -110,7 +110,7 @@
           <ul class="credits-list">
             <li><strong>Lista de verbos irregulares</strong><span class="text-sm muted">Material de clase (Irregular verbs). Los 82 verbos, sus formas y sus traducciones se han copiado tal cual.</span></li>
             <li><strong>Iconos</strong><span class="text-sm muted">Basados en el estilo de Lucide (licencia ISC).</span></li>
-            <li><strong>Tipografías</strong><span class="text-sm muted">Bricolage Grotesque y Atkinson Hyperlegible, de Google Fonts (licencia SIL Open Font). Sin conexión se usan las fuentes del sistema.</span></li>
+            <li><strong>Tipografías</strong><span class="text-sm muted">Bricolage Grotesque y Atkinson Hyperlegible, de Google Fonts (licencia SIL Open Font). Van incluidas en el proyecto, así que también se ven sin conexión.</span></li>
           </ul>
         </article>
       </section>`;
